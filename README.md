@@ -67,3 +67,4 @@ The webapp will be written using only HTML, CSS and Javascript, so it is complet
 ----------------------------------------------------------------------------
 ##License
 This project is currently licensed under the GNU General Public License v3. A copy of [LICENSE](https://github.com/fossasia/open-event-webapp/blob/master/LICENSE.md) should be present along with the source code. To obtain the software under a different license, please contact FOSSASIA.
+

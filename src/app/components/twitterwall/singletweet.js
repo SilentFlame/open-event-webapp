@@ -1,7 +1,9 @@
+/*created by aayusharora on 2/3/2016 */
 angular
     .module('oe.twitterwall')
     .directive('tweet',tweet);
 /*directive to display tweets after a timespan of 10000 ms.*/
+tweet.$inject=['$timeout','$rootScope'];
 function tweet($timeout,$rootScope) {
     var directive = {
         link: link,
@@ -42,6 +44,9 @@ function tweet($timeout,$rootScope) {
         scope.changeTweet=changeTweet;
         scope.even=false;
         getObject();
+        scope.$on('array',function(args,message){
+            scope.array=message;
+        });
         function getObject(){
             scope.$watch('array',function(oldvalue,newvalue){
             if(scope.array){
